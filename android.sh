@@ -32,3 +32,10 @@ brew cask install --appdir="~/Applications" android-studio
 
 # Remove outdated versions from the cellar.
 brew cleanup
+
+# Adding ANDROID_HOME to PATH. Android SDK will be installed in this path when you first open Android Studio
+LINE='PATH="export ANDROID_HOME="$HOME/Library/Android/sdk"'
+grep -q "$LINE" ~/.extra || echo "$LINE" >> ~/.extra
+
+LINE='PATH="export PATH=$PATH:$ANDROID_HOME/tools:$ANDROID_HOME/platform-tools'
+grep -q "$LINE" ~/.extra || echo "$LINE" >> ~/.extra
