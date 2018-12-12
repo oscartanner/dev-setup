@@ -48,6 +48,14 @@ function runDots() {
             echo ""
             ./qa.sh
         fi
+	if [ $ARG == "WORK" ] || [ $ARG == "all" ]; then
+            # Run the work.sh Script
+            echo "------------------------------"
+            echo "Setting up Work development environment."
+            echo "------------------------------"
+            echo ""
+            ./work.sh
+        fi
     done
 
     echo "------------------------------"
