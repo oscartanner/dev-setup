@@ -198,7 +198,7 @@ brew cask install --appdir="/Applications" slack
 # brew cask alfred link
 
 # Install Docker, which requires virtualbox
-brew install docker
+# brew install docker
 # brew install boot2docker
 
 # Install developer friendly quick look plugins; see https://github.com/sindresorhus/quick-look-plugins
