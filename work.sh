@@ -23,9 +23,6 @@ brew tap caskroom/versions
 
 brew cask install --appdir="~/Applications" intellij-idea
 brew cask install --appdir="~/Applications" robo-3t
-# brew cask install --appdir="~/Applications" datagrip
-# brew cask install postgres
-# brew cask install --appdir="~/Applications" tunnelbear
 # brew cask install --appdir="~/Applications" cleanmymac
 # brew cask install --appdir="~/Applications" charles
 # brew cask install --appdir="~/Applications" paw
@@ -35,5 +32,7 @@ brew cask install --appdir="~/Applications" docker
 
 brew install maven
 # brew install postgres
+
+brew install node
 
 # brew cask install --appdir="~/Applications" calibre

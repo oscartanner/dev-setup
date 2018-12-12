@@ -28,9 +28,11 @@ brew install carthage
 brew install libimobiledevice --HEAD
 brew install ios-deploy
 
-# Remove outdated versions from the cellar.
-brew cleanup
-
 # Install Appium
 npm install -g appium
 npm install wd
+
+brew cask install --appdir="~/Applications" spectacle
+
+# Remove outdated versions from the cellar.
+brew cleanup

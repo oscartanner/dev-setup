@@ -40,14 +40,14 @@ function runDots() {
             echo ""
             ./android.sh
         fi
-	if [ $ARG == "QA" ] || [ $ARG == "all" ]; then
-            # Run the qa.sh Script
-            echo "------------------------------"
-            echo "Setting up QA development environment."
-            echo "------------------------------"
-            echo ""
-            ./qa.sh
-        fi
+	# if [ $ARG == "QA" ] || [ $ARG == "all" ]; then
+        #     # Run the qa.sh Script
+        #     echo "------------------------------"
+        #     echo "Setting up QA development environment."
+        #     echo "------------------------------"
+        #     echo ""
+        #     ./qa.sh
+        # fi
 	if [ $ARG == "WORK" ] || [ $ARG == "all" ]; then
             # Run the work.sh Script
             echo "------------------------------"
