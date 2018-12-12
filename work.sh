@@ -29,7 +29,7 @@ brew cask install --appdir="~/Applications" robo-3t
 # brew cask install --appdir="~/Applications" cleanmymac
 # brew cask install --appdir="~/Applications" charles
 # brew cask install --appdir="~/Applications" paw
-# brew cask install --appdir="~/Applications" zeplin
+brew cask install --appdir="~/Applications" zeplin
 
 
 brew install maven
