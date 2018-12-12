@@ -38,7 +38,7 @@ brew install findutils
 brew install gnu-sed --with-default-names
 # Install Bash 4.
 brew install bash
-brew tap homebrew/versions
+# brew tap homebrew/versions
 # We installed the new shell, now we have to activate it
 echo "Adding the newly installed shell to the list of allowed shells"
 # Prompts for password
@@ -89,9 +89,9 @@ echo "$LINE" >> ~/.extra
 
 # Install more recent versions of some OS X tools.
 brew install vim --override-system-vi
-brew install homebrew/dupes/grep
-brew install homebrew/dupes/openssh
-brew install homebrew/dupes/screen
+# brew install homebrew/dupes/grep
+# brew install homebrew/dupes/openssh
+# brew install homebrew/dupes/screen
 # brew install homebrew/php/php55 --with-gmp
 
 # Install font tools.
@@ -167,25 +167,19 @@ brew link libxslt --force
 # Core casks
 # brew cask install --appdir="/Applications" alfred
 brew cask install --appdir="~/Applications" iterm2
-brew cask install --appdir="~/Applications" java8
 # brew cask install --appdir="~/Applications" xquartz
 
 # Development tool casks
-brew cask install --appdir="/Applications" sublime-text3
+# brew cask install --appdir="/Applications" sublime-text
 # brew cask install --appdir="/Applications" atom
 brew cask install --appdir="/Applications" virtualbox
-# brew cask install --appdir="/Applications" spotify
+brew cask install --appdir="/Applications" spotify
 # brew cask install --appdir="/Applications" vagrant
 # brew cask install --appdir="/Applications" macdown
 
 # Misc casks
 brew cask install --appdir="/Applications" google-chrome
 # brew cask install --appdir="/Applications" firefox
-# brew cask install --appdir="/Applications" skype
-brew cask install --appdir="/Applications" slack
-# brew cask install --appdir="/Applications" whatsapp
-# brew cask install --appdir="/Applications" dropbox
-# brew cask install --appdir="/Applications" google-backup-and-sync
 # brew cask install --appdir="/Applications" evernote
 # brew cask install --appdir="/Applications" 1password
 # brew cask install --appdir="/Applications" gimp

@@ -18,18 +18,14 @@ fi
 # Make sure we’re using the latest Homebrew.
 brew update
 
-brew install node
+# Upgrade any already-installed formulae.
+brew upgrade --all
 
-# Install Appium iOS Dependencies
-brew install carthage
-brew install libimobiledevice --HEAD
-brew install ios-deploy
+brew cask install --appdir="/Applications" whatsapp
+brew cask install --appdir="/Applications" dropbox
+brew cask install --appdir="/Applications" skype
+brew cask install --appdir="/Applications" google-backup-and-sync
 
-# Install Appium
-npm install -g appium
-npm install wd
-
-brew cask install --appdir="~/Applications" spectacle
-
-# Remove outdated versions from the cellar.
-brew cleanup
+# Install Emacs
+brew cask install emacs
+git clone git@github.com:oscartanner/emacs.git ~/.emacs.d

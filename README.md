@@ -4,8 +4,8 @@ dev-setup
 
 ## Utilization
 
-1. Download and install Xcode
-2. Open Xcode and accept its terms
+1. Download and install Xcode (If needed)
+2. Open Xcode and accept its terms (If you installed Xcode)
 3. Run script
 ```
 ./.dots all
@@ -20,24 +20,26 @@ gem install bundler
 ```
    
 6. Reboot your machine
-7. Open Android Studio and install Android SDK
-8. Add `JAVA_HOME` to your `.extra` or `.bash_profile`
+7. Run `.android.sh` if you need android stuff
+8. Open Android Studio and install Android SDK (if you runned android script)
+9. Add `JAVA_HOME` to your `.extra` or `.bash_profile`
 ```
 export JAVA_HOME=/Library/Java/JavaVirtualMachines/jdk__VERSION__.jdk/Contents/Home
 export PATH="$JAVA_HOME/bin:$PATH"
 ```
-9. Add `ANDROD_HOME` to your `.extra` or `.bash_profile`
+10. Add `ANDROD_HOME` to your `.extra` or `.bash_profile` (If you installed Android)
 ```
 export ANDROID_HOME=~/Library/Android/sdk
 export PATH=$PATH:$ANDROID_HOME/bin:$ANDROID_HOME/tools:$ANDROID_HOME/platform-tools:$ANDROID_HOME/lib:$ANDROID_HOME/tools/lib
 ```
-10. You can add some alias to ease your life
+11. You can add some alias to ease your life (If you use Ruby)
 ```
 alias be="bundle exec "
 alias bi="bundle install"
 ```
-11. Install iOS provisioning profiles
-
+12. Install iOS provisioning profiles
+13. Run `./qa.sh` if you are a QA :)
+14. Run `./personal.sh`
 
 --------------------------
 

@@ -21,6 +21,8 @@ brew update
 # Install Cask
 brew tap caskroom/versions
 
+brew cask install java8
+
 brew cask install --appdir="~/Applications" intellij-idea
 brew cask install --appdir="~/Applications" robo-3t
 # brew cask install --appdir="~/Applications" cleanmymac
@@ -28,7 +30,7 @@ brew cask install --appdir="~/Applications" robo-3t
 # brew cask install --appdir="~/Applications" paw
 brew cask install --appdir="~/Applications" zeplin
 brew cask install --appdir="~/Applications" docker
-
+brew cask install --appdir="/Applications" slack
 
 brew install maven
 # brew install postgres
