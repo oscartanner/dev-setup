@@ -22,6 +22,7 @@ brew update
 brew upgrade --all
 
 brew cask install --appdir="/Applications" whatsapp
+brew cask install --appdir="/Applications" telegram
 brew cask install --appdir="/Applications" dropbox
 brew cask install --appdir="/Applications" skype
 brew cask install --appdir="/Applications" google-backup-and-sync
