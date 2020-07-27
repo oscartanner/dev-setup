@@ -166,7 +166,7 @@ brew link libxslt --force
 
 # Core casks
 # brew cask install --appdir="/Applications" alfred
-brew cask install --appdir="~/Applications" iterm2
+brew cask install --appdir="/Applications" iterm2
 # brew cask install --appdir="~/Applications" xquartz
 
 # Development tool casks
