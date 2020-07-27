@@ -37,14 +37,14 @@ brew install findutils
 # Install GNU `sed`, overwriting the built-in `sed`.
 brew install gnu-sed --with-default-names
 # Install Bash 4.
-brew install bash
+# brew install bash
 # brew tap homebrew/versions
 # We installed the new shell, now we have to activate it
-echo "Adding the newly installed shell to the list of allowed shells"
+# echo "Adding the newly installed shell to the list of allowed shells"
 # Prompts for password
-sudo bash -c 'echo /usr/local/bin/bash >> /etc/shells'
+# sudo bash -c 'echo /usr/local/bin/bash >> /etc/shells'
 # Change to the new shell, prompts for password
-chsh -s /usr/local/bin/bash
+# chsh -s /usr/local/bin/bash
 
 # Install `wget` with IRI support.
 brew install wget --with-iri
@@ -66,26 +66,26 @@ LINE='eval "$(rbenv init -)"'
 grep -q "$LINE" ~/.extra || echo "$LINE" >> ~/.extra
 
 # Install bash plugins
-brew install bash-git-prompt
-LINE=$(cat <<- EOM
-if [ -f "$(brew --prefix bash-git-prompt)/share/gitprompt.sh" ]; then
-   GIT_PROMPT_THEME=Default
-   source "$(brew --prefix bash-git-prompt)/share/gitprompt.sh"
-fi
+# brew install bash-git-prompt
+# LINE=$(cat <<- EOM
+# if [ -f "$(brew --prefix bash-git-prompt)/share/gitprompt.sh" ]; then
+#    GIT_PROMPT_THEME=Default
+#    source "$(brew --prefix bash-git-prompt)/share/gitprompt.sh"
+# fi
 
-EOM
-)
-echo "$LINE" >> ~/.extra
+# EOM
+# )
+# echo "$LINE" >> ~/.extra
 
-brew install bash-completion
-LINE=$(cat <<- EOM
-if [ -f $(brew --prefix)/etc/bash_completion ]; then
-. $(brew --prefix)/etc/bash_completion
-fi
+# brew install bash-completion
+# LINE=$(cat <<- EOM
+# if [ -f $(brew --prefix)/etc/bash_completion ]; then
+# . $(brew --prefix)/etc/bash_completion
+# fi
 
-EOM
-)
-echo "$LINE" >> ~/.extra
+# EOM
+# )
+# echo "$LINE" >> ~/.extra
 
 # Install more recent versions of some OS X tools.
 brew install vim --override-system-vi
@@ -173,7 +173,7 @@ brew cask install --appdir="~/Applications" iterm2
 # brew cask install --appdir="/Applications" sublime-text
 # brew cask install --appdir="/Applications" atom
 brew cask install --appdir="/Applications" virtualbox
-brew cask install --appdir="/Applications" spotify
+# brew cask install --appdir="/Applications" spotify
 # brew cask install --appdir="/Applications" vagrant
 # brew cask install --appdir="/Applications" macdown
 
@@ -190,10 +190,6 @@ brew cask install --appdir="/Applications" google-chrome
 
 # Link cask apps to Alfred
 # brew cask alfred link
-
-# Install Docker, which requires virtualbox
-# brew install docker
-# brew install boot2docker
 
 # Install developer friendly quick look plugins; see https://github.com/sindresorhus/quick-look-plugins
 brew cask install qlcolorcode qlstephen qlmarkdown quicklook-json qlprettypatch quicklook-csv qlimagesize webpquicklook suspicious-package
