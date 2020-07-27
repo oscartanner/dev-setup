@@ -26,6 +26,7 @@ brew cask install --appdir="/Applications" telegram
 brew cask install --appdir="/Applications" dropbox
 brew cask install --appdir="/Applications" skype
 brew cask install --appdir="/Applications" google-backup-and-sync
+brew cask install --appdir="/Applications" vnc-viewer
 
 # Install Emacs
 brew cask install emacs
