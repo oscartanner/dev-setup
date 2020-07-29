@@ -29,7 +29,5 @@ brew install ios-deploy
 npm install -g appium
 npm install wd
 
-brew cask install --appdir="~/Applications" spectacle
-
 # Remove outdated versions from the cellar.
 brew cleanup
