@@ -19,7 +19,7 @@ fi
 brew update
 
 # Upgrade any already-installed formulae.
-brew upgrade --all
+# brew upgrade --all
 
 brew cask install --appdir="/Applications" whatsapp
 brew cask install --appdir="/Applications" telegram
@@ -27,7 +27,7 @@ brew cask install --appdir="/Applications" dropbox
 brew cask install --appdir="/Applications" skype
 brew cask install --appdir="/Applications" google-backup-and-sync
 brew cask install --appdir="/Applications" vnc-viewer
-brew cask install --appdir="~/Applications" spectacle
+brew cask install --appdir="/Applications" spectacle
 
 # Install Emacs
 brew cask install emacs

@@ -19,9 +19,9 @@ fi
 brew update
 
 # Install Cask
-brew tap caskroom/versions
+brew tap homebrew/cask-versions
 
-brew cask install openjdk@11
+brew install openjdk@11
 sudo ln -sfn $(brew --prefix)/opt/openjdk@11/libexec/openjdk.jdk /Library/Java/JavaVirtualMachines/openjdk-11.jdk
 
 brew cask install --appdir="/Applications" intellij-idea
