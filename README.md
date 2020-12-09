@@ -22,10 +22,12 @@ gem install bundler
 6. Reboot your machine
 7. Run `.android.sh` if you need android stuff
 8. Open Android Studio and install Android SDK (if you runned android script)
-9. Add `JAVA_HOME` to your `.extra` or `.bash_profile`
+9. Run `./work.sh`
+9. Add java version to jenv:
 ```
-export JAVA_HOME=/Library/Java/JavaVirtualMachines/jdk__VERSION__.jdk/Contents/Home
-export PATH="$JAVA_HOME/bin:$PATH"
+jenv add $(brew --prefix)/opt/openjdk@11/libexec/openjdk.jdk/Content/Home
+jenv global openjdk11
+jenv enable-plugin maven
 ```
 10. Add `ANDROD_HOME` to your `.extra` or `.bash_profile` (If you installed Android)
 ```

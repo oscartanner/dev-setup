@@ -36,6 +36,11 @@ brew cask install --appdir="/Applications" microsoft-teams
 brew cask install --appdir="/Applications" kafka-tool
 brew cask install --appdir="/Applications" postman
 
+brew install jenv
+echo 'export PATH="$HOME/.jenv/bin:$PATH"' >> ~/.extra
+echo 'eval "$(jenv init -)"' >> ~/.extra
+
+
 brew install maven
 # brew install postgres
 
