@@ -24,17 +24,15 @@ brew tap homebrew/cask-versions
 brew install openjdk@11
 sudo ln -sfn $(brew --prefix)/opt/openjdk@11/libexec/openjdk.jdk /Library/Java/JavaVirtualMachines/openjdk-11.jdk
 
-brew cask install --appdir="/Applications" intellij-idea
-brew cask install --appdir="/Applications" robo-3t
+# brew cask install --appdir="/Applications" intellij-idea
+# brew cask install --appdir="/Applications" robo-3t
 # brew cask install --appdir="~/Applications" cleanmymac
-brew cask install --appdir="~/Applications" charles
-# brew cask install --appdir="~/Applications" paw
-brew cask install --appdir="/Applications" zeplin
-brew cask install --appdir="/Applications" docker
-brew cask install --appdir="/Applications" slack
-brew cask install --appdir="/Applications" microsoft-teams
-brew cask install --appdir="/Applications" kafka-tool
-brew cask install --appdir="/Applications" postman
+# brew cask install --appdir="~/Applications" charles
+brew install --cask --appdir="/Applications" docker
+# brew cask install --appdir="/Applications" slack
+# brew cask install --appdir="/Applications" microsoft-teams
+# brew cask install --appdir="/Applications" kafka-tool
+brew install --cask --appdir="/Applications" postman
 
 brew install jenv
 echo 'export PATH="$HOME/.jenv/bin:$PATH"' >> ~/.extra
@@ -44,6 +42,6 @@ echo 'eval "$(jenv init -)"' >> ~/.extra
 brew install maven
 # brew install postgres
 
-brew install node
+# brew install node
 
 # brew cask install --appdir="~/Applications" calibre

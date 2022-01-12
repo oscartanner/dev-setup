@@ -56,8 +56,12 @@ brew install wget --with-iri
 # brew install narwhal
 
 # Install Python
-brew install python
 brew install python3
+pip3 install virtualenvwrapper autopep8 flake8 jedi yapf black rope isort autoflake
+echo "export VIRTUALENVWRAPPER_PYTHON=$(which python3)" >> ~/.extra
+echo "source /usr/local/bin/virtualenvwrapper.sh"
+
+
 
 # Install ruby-build and rbenv
 brew install ruby-build
