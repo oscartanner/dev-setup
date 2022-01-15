@@ -43,6 +43,7 @@ alias bi="bundle install"
 13. Run `./qa.sh` if you are a QA :)
 14. Run `./personal.sh`
 
+15. Check: https://gist.github.com/kevin-smets/8568070
 --------------------------
 
 <p align="center">
