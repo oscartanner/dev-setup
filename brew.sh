@@ -57,7 +57,7 @@ brew install wget --with-iri
 
 # Install Python
 brew install python3
-pip3 install virtualenvwrapper autopep8 flake8 jedi yapf black rope isort autoflake
+pip3 install virtualenvwrapper autopep8 flake8 jedi yapf black rope isort autoflake importmagic epc
 echo "export VIRTUALENVWRAPPER_PYTHON=$(which python3)" >> ~/.extra
 echo "source /usr/local/bin/virtualenvwrapper.sh"
 
