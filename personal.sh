@@ -31,6 +31,6 @@ brew install --cask --appdir="/Applications" spectacle
 
 # Install Emacs
 brew install --cask --appdir="/Applications" emacs
-git clone git@github.com:oscartanner/emacs.git ~/.emacs.d
+git clone https://github.com/oscartanner/emacs.git ~/.emacs.d
 curl https://raw.githubusercontent.com/humitos/py-autoflake.el/master/py-autoflake.el > ~/.emacs.d/py-autoflake.el
 curl https://raw.githubusercontent.com/humitos/buftra.el/master/buftra.el > ~/.emacs.d/buftra.el
