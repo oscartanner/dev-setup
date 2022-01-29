@@ -12,7 +12,9 @@ while true; do sudo -n true; sleep 60; kill -0 "$$" || exit; done 2>/dev/null &
 # Install if we don't have it
 if test ! $(which brew); then
   echo "Installing homebrew..."
-  ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+  /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+  echo 'eval "$(/opt/homebrew/bin/brew shellenv)"' >> /Users/oscar/.zprofile
+  eval "$(/opt/homebrew/bin/brew shellenv)"
 fi
 
 # Make sure we’re using the latest Homebrew.
@@ -35,7 +37,7 @@ brew install moreutils
 # Install GNU `find`, `locate`, `updatedb`, and `xargs`, `g`-prefixed.
 brew install findutils
 # Install GNU `sed`, overwriting the built-in `sed`.
-brew install gnu-sed --with-default-names
+# brew install gnu-sed
 # Install Bash 4.
 # brew install bash
 # brew tap homebrew/versions
@@ -47,7 +49,7 @@ brew install gnu-sed --with-default-names
 # chsh -s /usr/local/bin/bash
 
 # Install `wget` with IRI support.
-brew install wget --with-iri
+brew install wget
 
 # Install RingoJS and Narwhal.
 # Note that the order in which these are installed is important;
@@ -92,7 +94,7 @@ grep -q "$LINE" ~/.extra || echo "$LINE" >> ~/.extra
 # echo "$LINE" >> ~/.extra
 
 # Install more recent versions of some OS X tools.
-brew install vim --override-system-vi
+# brew install vim --override-system-vi
 # brew install homebrew/dupes/grep
 # brew install homebrew/dupes/openssh
 # brew install homebrew/dupes/screen
@@ -142,7 +144,7 @@ brew install hub
 LINE='eval "$(hub alias -s)"'
 grep -q "$LINE" ~/.extra || echo "$LINE" >> ~/.extra
 
-brew install imagemagick --with-webp
+brew install imagemagick
 # brew install lua
 # brew install lynx
 # brew install p7zip
@@ -169,34 +171,34 @@ brew link libxslt --force
 # heroku update
 
 # Core casks
-# brew cask install --appdir="/Applications" alfred
-brew cask install --appdir="/Applications" iterm2
-# brew cask install --appdir="~/Applications" xquartz
+# brew install --cask --appdir="/Applications" alfred
+brew install --cask --appdir="/Applications" iterm2
+# brew install --cask --appdir="~/Applications" xquartz
 
 # Development tool casks
-# brew cask install --appdir="/Applications" sublime-text
-# brew cask install --appdir="/Applications" atom
-brew cask install --appdir="/Applications" virtualbox
-# brew cask install --appdir="/Applications" spotify
-# brew cask install --appdir="/Applications" vagrant
-# brew cask install --appdir="/Applications" macdown
+# brew install --cask --appdir="/Applications" sublime-text
+# brew install --cask --appdir="/Applications" atom
+brew install --cask --appdir="/Applications" virtualbox
+# brew install --cask --appdir="/Applications" spotify
+# brew install --cask --appdir="/Applications" vagrant
+# brew install --cask --appdir="/Applications" macdown
 
 # Misc casks
-brew cask install --appdir="/Applications" google-chrome
-# brew cask install --appdir="/Applications" firefox
-# brew cask install --appdir="/Applications" evernote
-# brew cask install --appdir="/Applications" 1password
-# brew cask install --appdir="/Applications" gimp
-# brew cask install --appdir="/Applications" inkscape
+brew install --cask --appdir="/Applications" google-chrome
+# brew install --cask --appdir="/Applications" firefox
+# brew install --cask --appdir="/Applications" evernote
+# brew install --cask --appdir="/Applications" 1password
+# brew install --cask --appdir="/Applications" gimp
+# brew install --cask --appdir="/Applications" inkscape
 
 #Remove comment to install LaTeX distribution MacTeX
-#brew cask install --appdir="/Applications" mactex
+#brew install --cask --appdir="/Applications" mactex
 
 # Link cask apps to Alfred
 # brew cask alfred link
 
 # Install developer friendly quick look plugins; see https://github.com/sindresorhus/quick-look-plugins
-brew cask install qlcolorcode qlstephen qlmarkdown quicklook-json qlprettypatch quicklook-csv qlimagesize webpquicklook suspicious-package
+brew install --cask qlcolorcode qlstephen qlmarkdown quicklook-json qlprettypatch quicklook-csv qlimagesize webpquicklook suspicious-package
 
 # Remove outdated versions from the cellar.
 brew cleanup
