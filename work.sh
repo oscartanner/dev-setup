@@ -24,4 +24,7 @@ echo 'export PATH="/opt/homebrew/opt/openjdk/bin:$PATH"' >> ~/.zshrc
 
 brew install --cask --appdir="/Applications" docker
 brew install --cask --appdir="/Applications" slack
-brew install --cask --appdir="/Applications" postman
+brew install --cask --appdir="/Applications" insomnia
+brew install --cask --appdir="/Applications" dbeaver-community
+
+brew install graphviz
