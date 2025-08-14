@@ -180,7 +180,7 @@ brew install --cask --appdir="/Applications" iterm2
 # brew install --cask --appdir="/Applications" sublime-text
 # brew install --cask --appdir="/Applications" atom
 brew install --cask --appdir="/Applications" virtualbox
-# brew install --cask --appdir="/Applications" spotify
+brew install --cask --appdir="/Applications" spotify
 # brew install --cask --appdir="/Applications" vagrant
 # brew install --cask --appdir="/Applications" macdown
 
@@ -188,12 +188,15 @@ brew install --cask --appdir="/Applications" virtualbox
 brew install --cask --appdir="/Applications" google-chrome
 # brew install --cask --appdir="/Applications" firefox
 # brew install --cask --appdir="/Applications" evernote
-# brew install --cask --appdir="/Applications" 1password
+brew install --cask --appdir="/Applications" 1password
 # brew install --cask --appdir="/Applications" gimp
 # brew install --cask --appdir="/Applications" inkscape
 
 #Remove comment to install LaTeX distribution MacTeX
 #brew install --cask --appdir="/Applications" mactex
+
+# For fast in file text searches
+brew install ripgrep
 
 # Link cask apps to Alfred
 # brew cask alfred link
