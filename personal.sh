@@ -30,7 +30,9 @@ brew install --cask --appdir="/Applications" vnc-viewer
 brew install --cask --appdir="/Applications" spectacle
 
 # Install Emacs
-brew install --cask --appdir="/Applications" emacs
+brew tap d12frosted/emacs-plus
+brew install emacs-plus
+ln -s "$(brew --prefix emacs-plus)/Emacs.app" /Applications/Emacs.app
 git clone https://github.com/oscartanner/emacs.git ~/.emacs.d
 curl https://raw.githubusercontent.com/humitos/py-autoflake.el/master/py-autoflake.el > ~/.emacs.d/py-autoflake.el
 curl https://raw.githubusercontent.com/humitos/buftra.el/master/buftra.el > ~/.emacs.d/buftra.el
